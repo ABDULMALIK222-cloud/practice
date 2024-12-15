@@ -23,4 +23,24 @@ if__name__=="__main__:
   n = int(input().strip())
   arr = list(map(input().strip().split()))
   plusminus(arr)
-      
+
+
+# print the maximunm of array and minimum of array in the given arr as list print the maximum and minimum of given 5 integers by taking only 4 integers and return min and max of the list
+import math
+import re
+import os
+import random
+import sys
+
+def minmax(arr):
+  arr.sort()
+  sum=0
+  for i in arr:
+    sum += i
+  print(sum - arr[4], sum - arr[0])
+
+if__name__=="__main__:
+  arr = list(map(input().rstrip().split()))
+  minmax(arr)
+
+
